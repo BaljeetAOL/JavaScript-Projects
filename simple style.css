@@ -1,0 +1,13 @@
+body {
+  font-family: Arial;
+}
+
+.calculator {
+  width: 220px;
+}
+
+.calculator-screen {
+  width: 100%;
+  font-size: 24px;
+  margin-bottom: 10px;
+}

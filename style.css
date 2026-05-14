@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: white;
+}
+
+/* HEADER */
+header {
+    background: orange;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* BANNER */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed orange;
+    margin: 20px;
+    padding: 20px;
+}
+
+.banner-text {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.banner-img {
+    width: 120px;
+}
+
+.order-title {
+    text-align: center;
+    color: orange;
+    margin: 30px 0;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    gap: 20px;
+    justify-content: center;
+}
+
+/* CARDS */
+.card {
+    background: #b52b00;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+.note {
+    font-size: 12px;
+    color: #ffd9b3;
+}
+
+/* BUTTONS */
+.buttons {
+    text-align: center;
+    margin: 25px;
+}
+
+button {
+    background: gold;
+    border: none;
+    padding: 10px 25px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* RECEIPT */
+.receipt {
+    width: 320px;
+    background: #b52b00;
+    color: white;
+    margin: 0 auto 30px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 15px;
+}

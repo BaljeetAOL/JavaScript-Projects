@@ -1,58 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Lightbox</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Fantasy Pizza</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h2><Font color=Magenta>Lightbox Illustration</font></h2>
+<!-- HEADER -->
+<header>
+    <div class="logo">Fantasy Pizza</div>
+    <nav>
+        <a href="#">Order</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
 
-<!-- Top thumbnails -->
-<div class="gallery">
-  <img src="plant1.png" onclick="openLightbox(0)">
-  <img src="plant2.png" onclick="openLightbox(1)">
-  <img src="plant3.png" onclick="openLightbox(2)">
-  <img src="plant4.png" onclick="openLightbox(3)">
+<!-- BANNER -->
+<section class="banner">
+    <img src="unicorn.png" class="banner-img left-img">
+    <div class="banner-text">
+        <h1>Fantasy Pizza</h1>
+        <p>We have the most delicious pizza...<br>you’ll think it’s magical!</p>
+    </div>
+    <img src="dragon.png" class="banner-img right-img">
+</section>
+
+<h2 class="order-title">--- Order ---</h2>
+
+<!-- ORDER GRID -->
+<div class="grid">
+
+    <div class="card">
+        <h3>Size</h3>
+        <label><input type="radio" name="size" checked> Personal — $6</label>
+        <label><input type="radio" name="size"> Medium — $10</label>
+        <label><input type="radio" name="size"> Large — $14</label>
+        <label><input type="radio" name="size"> Extra Large — $16</label>
+    </div>
+
+    <div class="card">
+        <h3>Crust</h3>
+        <label><input type="radio" name="crust" checked> Regular</label>
+        <label><input type="radio" name="crust"> Garlic Butter</label>
+        <label><input type="radio" name="crust"> Cheese Stuffed (+$3)</label>
+        <label><input type="radio" name="crust"> Spicy</label>
+        <label><input type="radio" name="crust"> House Special</label>
+    </div>
+
+    <div class="card">
+        <h3>Sauce</h3>
+        <label><input type="radio" name="sauce" checked> Marinara Sauce</label>
+        <label><input type="radio" name="sauce"> White Sauce</label>
+        <label><input type="radio" name="sauce"> BBQ Sauce</label>
+        <label><input type="radio" name="sauce"> No Sauce</label>
+    </div>
+
+    <div class="card">
+        <h3>Cheese</h3>
+        <label><input type="radio" name="cheese" checked> Regular</label>
+        <label><input type="radio" name="cheese"> Extra Cheese (+$3)</label>
+        <label><input type="radio" name="cheese"> No Cheese</label>
+    </div>
+
+    <div class="card">
+        <h3>Veggies</h3>
+        <label><input type="checkbox"> Tomatoes</label>
+        <label><input type="checkbox"> Onions</label>
+        <label><input type="checkbox"> Olives</label>
+        <label><input type="checkbox"> Green Peppers</label>
+        <label><input type="checkbox"> Mushrooms</label>
+        <label><input type="checkbox"> Pineapple</label>
+        <label><input type="checkbox"> Spinach</label>
+        <label><input type="checkbox"> Jalapeño</label>
+        <p class="note">First veggie free, +$1 each</p>
+    </div>
+
+    <div class="card">
+        <h3>Meat</h3>
+        <label><input type="checkbox"> Pepperoni</label>
+        <label><input type="checkbox"> Sausage</label>
+        <label><input type="checkbox"> Canadian Bacon</label>
+        <label><input type="checkbox"> Ground Beef</label>
+        <label><input type="checkbox"> Chicken</label>
+        <label><input type="checkbox"> Anchovy</label>
+        <p class="note">First meat free, +$1 each</p>
+    </div>
+
 </div>
 
-<p>Once an image is clicked, it opens the lightbox slideshow:</p>
-
-<!-- Lightbox -->
-<div id="lightbox" class="lightbox">
-
-  <span class="close" onclick="closeLightbox()">&times;</span>
-
-  <h2 class="lightbox-title">My Amazing Gallery 🌟<br>
-Hope you like it!</h2>
-
-  <img id="lightbox-img" class="lightbox-content">
-
-</div>
-<div id="lightbox" class="lightbox">
-
-  <span class="close" onclick="closeLightbox()">&times;</span>
-
-  <!-- Main Image -->
-  <img id="lightbox-img" class="lightbox-content">
-
-  <!-- Arrows -->
-  <a class="prev" onclick="changeSlide(-1)">❮</a>
-  <a class="next" onclick="changeSlide(1)">❯</a>
-
-  <!-- Bottom thumbnails -->
-  <div class="thumb-strip">
-    <img src="plant1.png" onclick="setSlide(0)">
-    <img src="plant2.png" onclick="setSlide(1)">
-    <img src="plant3.png" onclick="setSlide(2)">
-    <img src="plant4.png" onclick="setSlide(3)">
-  </div>
-
+<!-- BUTTONS -->
+<div class="buttons">
+    <button>Cancel</button>
+    <button class="order">Place Order</button>
 </div>
 
-<script src="script.js"></script>
+<!-- RECEIPT -->
+<div class="receipt">
+    <h3>--- Order ---</h3>
+    <p>Medium Pizza</p>
+    <p>Pepperoni</p>
+    <p>Mushrooms</p>
+    <p>Extra Cheese</p>
+    <p>Marinara Sauce</p>
+    <h4>Total Price: $17.00</h4>
+</div>
+
+<footer>
+    Copyright Fantasy Pizza 2019
+</footer>
 
 </body>
 </html>

@@ -1,0 +1,66 @@
+body {
+    background-color: darkblue;
+}
+
+h1 {
+    font-family: Helvetica;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-family: Arial;
+    color: snow;
+}
+
+div {
+    color: lightyellow;
+    font-family: Monospace;
+}
+
+#menuBG {
+    width: 400px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 600px;
+    height: 200px;
+}
+
+.left, .center, .right {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#cart {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    float: left;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    float: right;
+}
+
+#btnOrder {
+    width: 180px;
+    height: 40px;
+    display: block;
+    margin: 25px auto;
+}
+``
