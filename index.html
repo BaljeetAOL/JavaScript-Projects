@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lightbox</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h2><Font color=Magenta>Lightbox Illustration</font></h2>
+
+<!-- Top thumbnails -->
+<div class="gallery">
+  <img src="plant1.png" onclick="openLightbox(0)">
+  <img src="plant2.png" onclick="openLightbox(1)">
+  <img src="plant3.png" onclick="openLightbox(2)">
+  <img src="plant4.png" onclick="openLightbox(3)">
+</div>
+
+<p>Once an image is clicked, it opens the lightbox slideshow:</p>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+
+  <span class="close" onclick="closeLightbox()">&times;</span>
+
+  <h2 class="lightbox-title">My Amazing Gallery 🌟<br>
+Hope you like it!</h2>
+
+  <img id="lightbox-img" class="lightbox-content">
+
+</div>
+<div id="lightbox" class="lightbox">
+
+  <span class="close" onclick="closeLightbox()">&times;</span>
+
+  <!-- Main Image -->
+  <img id="lightbox-img" class="lightbox-content">
+
+  <!-- Arrows -->
+  <a class="prev" onclick="changeSlide(-1)">❮</a>
+  <a class="next" onclick="changeSlide(1)">❯</a>
+
+  <!-- Bottom thumbnails -->
+  <div class="thumb-strip">
+    <img src="plant1.png" onclick="setSlide(0)">
+    <img src="plant2.png" onclick="setSlide(1)">
+    <img src="plant3.png" onclick="setSlide(2)">
+    <img src="plant4.png" onclick="setSlide(3)">
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
